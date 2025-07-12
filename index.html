@@ -101,7 +101,7 @@
           <a class="nav-link" href="sobre.html">Sobre a Protech</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/solucoes">Soluções</a>
+          <a class="nav-link" href="solucoes.html">Soluções</a>
         </li>
           <li class="nav-item"><a class="nav-link" href="#diferenciais">Diferenciais</a></li>
         </ul>
@@ -146,8 +146,6 @@
         </div>
       </div>
     </div>
-
-    <!-- Controles de navegação -->
     <button
       class="carousel-control-prev"
       type="button"
@@ -168,13 +166,13 @@
     </button>
   </section>
 
-  <section id="compromissos">
+  <section id="compromissos" style="background: #fff">
   <div class="container">
     <div class="row align-items-center justify-content-center gx-5">
       <div class="col-12 col-md-6 text-center text-md-start mb-4 mb-md-0">
         <h2 class="display-4 fw-bold text-gray lh-sm">Nosso<br>Compromisso</h2>
         <hr style="width: 60px; border-top: 3px solid var(--gray);" />
-         <a href="#solucoes" class="btn btn-outline-secondary mt-3">
+         <a href="solucoes.html" class="btn btn-outline-secondary mt-3">
   Conheça nossas soluções
 </a> 
       </div>
@@ -208,13 +206,13 @@
   </div>
 </section>
 
-<hr/>
 
-  <section id="diferenciais">
+<section id="diferenciais">
   <div class="container">
+   
     <div class="row align-items-center mb-5">
       <div class="col-12 col-md-4">
-        <h2 class="display-4 fw-bold text-gray lh-sm">Nosso<br>Diferencial</h2>
+        <h2 class="display-4 fw-bold text-gray lh-sm">Nosso<br />Diferencial</h2>
         <hr style="width: 60px; border-top: 3px solid var(--gray);" />
       </div>
       <div class="col-12 col-md-8">
@@ -227,10 +225,24 @@
       </div>
     </div>
 
+    <!-- Cards de diferenciais incluindo Atendimento de Excelência -->
     <div class="row g-4">
+      <!-- Novo card: Atendimento de Excelência -->
       <div class="col-12 col-md-6 col-lg-3">
-        <div class="diferencial-card h-100">
-          <i class="bi bi-people-fill icon-diferencial"></i>
+        <div class="diferencial-card h-100 text-center p-3">
+          <i class="bi bi-headset icon-diferencial mb-3"></i>
+          <h5 class="diferencial-title">Atendimento de Excelência</h5>
+          <p class="diferencial-desc">
+            Análise, auditoria e consultoria no Gerenciamento de Riscos
+            realizadas por especialistas.
+          </p>
+        </div>
+      </div>
+
+      <!-- Equipe especializada -->
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="diferencial-card h-100 text-center p-3">
+          <i class="bi bi-people-fill icon-diferencial mb-3"></i>
           <h5 class="diferencial-title">Equipe especializada</h5>
           <p class="diferencial-desc">
             Nossa equipe técnica é composta por profissionais certificados,
@@ -238,9 +250,11 @@
           </p>
         </div>
       </div>
+
+      <!-- Rede de atendimento -->
       <div class="col-12 col-md-6 col-lg-3">
-        <div class="diferencial-card h-100">
-          <i class="bi bi-geo-alt-fill icon-diferencial"></i>
+        <div class="diferencial-card h-100 text-center p-3">
+          <i class="bi bi-geo-alt-fill icon-diferencial mb-3"></i>
           <h5 class="diferencial-title">Rede de atendimento</h5>
           <p class="diferencial-desc">
             Contamos com agentes distribuídos no Brasil todo, garantindo cobertura em
@@ -248,28 +262,33 @@
           </p>
         </div>
       </div>
+
+      <!-- Melhores prazos -->
       <div class="col-12 col-md-6 col-lg-3">
-        <div class="diferencial-card h-100">
-          <i class="bi bi-speedometer2 icon-diferencial"></i>
+        <div class="diferencial-card h-100 text-center p-3">
+          <i class="bi bi-speedometer2 icon-diferencial mb-3"></i>
           <h5 class="diferencial-title">Melhores prazos</h5>
           <p class="diferencial-desc">
-            Adotamos padrões reconhecidos e ágeis para oferecer os melhoras prazos.
+            Adotamos padrões reconhecidos e ágeis para oferecer os melhores prazos.
           </p>
         </div>
       </div>
+
+      <!-- Processos controlados -->
       <div class="col-12 col-md-6 col-lg-3">
-        <div class="diferencial-card h-100">
-          <i class="bi bi-gear-fill icon-diferencial"></i>
+        <div class="diferencial-card h-100 text-center p-3">
+          <i class="bi bi-gear-fill icon-diferencial mb-3"></i>
           <h5 class="diferencial-title">Processos controlados</h5>
           <p class="diferencial-desc">
             Todos os nossos procedimentos são rigorosamente monitorados, desde
-            a abertura até à entrega final garantido a melhor experiência para nossos clientes.
+            a abertura até a entrega final, garantindo a melhor experiência para nossos clientes.
           </p>
         </div>
       </div>
     </div>
   </div>
 </section>
+ 
 
 
    <section id="areas-atuacao" class="py-5" style="background: #fff;">
@@ -298,9 +317,7 @@
   </div>
 </section>
 
-<hr/>
-
-<section class="features">
+<section class="features" style="background: #f8f9fa">
   <div class="feature-item">
     <img src="images/mapa-brasil.svg" alt="Mapa do Brasil" />
     <p class="text-gray">Todo território nacional</p>
@@ -316,21 +333,18 @@
 <footer class="footer">
   <div class="container">
     <div class="row text-center text-md-start">
-      <!-- WhatsApp -->
       <div class="col-12 col-md-4 footer-item">
         <i class="bi bi-whatsapp footer-icon"></i>
         <a href="https://wa.me/5511948000730" class="footer-text">
           WhatsApp (11) 94800-0730
         </a>
       </div>
-      <!-- Email -->
       <div class="col-12 col-md-4 footer-item">
         <i class="bi bi-envelope-fill footer-icon"></i>
         <a href="mailto:comercial@protech.com.br" class="footer-text">
           comercial@protech.com.br
         </a>
       </div>
-      <!-- Endereço -->
       <div class="col-12 col-md-4 footer-item">
         <i class="bi bi-geo-alt-fill footer-icon"></i>
         <span class="footer-text">
