@@ -34,3 +34,14 @@
     height: 400px;
     background: url('../images/territorio-nacional.png') center/cover no-repeat;
   }
+
+  #carouselCover .carousel-image {
+    pointer-events: none;
+  }
+
+  /* Garante que as setas fiquem acima da imagem */
+  #carouselCover .carousel-control-prev,
+  #carouselCover .carousel-control-next {
+    z-index: 5;
+    width: 5%; /* aumenta a área clicável, se necessário */
+  }

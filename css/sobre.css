@@ -2,109 +2,105 @@
     --gray: #808080;
     --gold: #D4AF37;
     --white: #ffffff;
+    --gray-light: #f8f9fa;
     --gray-text: #6c757d;
   }
 
-
+  /* Regras para títulos de seção em cards */
   .section-title {
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    margin-bottom: 1rem;
   }
-  .section-title .icon-section {
-    font-size: 2rem;
+  .icon-section {
+    font-size: 1.75rem;
     color: var(--gold);
   }
-  .section-title .title-main {
-    font-size: 2.5rem;
+  .title-main {
+    font-size: 2rem;
     font-weight: 700;
     color: var(--gray);
     margin: 0;
-    line-height: 1.1;
+    line-height: 1;
   }
-
   .section-divider {
     width: 60px;
-    border-top: 3px solid var(--gray);
-    margin: 0 0 2rem auto;
-  }
+    border-top: 3px solid var(--gray);  }
 
-  /* Valores */
+  /* Layout de cards para Valores */
   #valores {
-    background: var(--white);
+    background: var(--gray-light);
     padding: 4rem 0;
   }
-  .row-valores {
+  #valores .row-valores {
     display: flex;
     flex-wrap: wrap;
+    gap: 2rem;
   }
-  .valores-text {
-    flex: 1 1 50%;
-    padding-right: 2rem;
-    text-align: left;
+  #valores .card-valores {
+    flex: 1 1 calc(50% - 1rem);
+    display: flex;
+    flex-direction: column;
+    border: none;
+    border-radius: .75rem;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
   }
-  .valores-image {
-    flex: 1 1 50%;
-    min-height: 400px;
-    background: url('../images/sobre-empresarial.jpg') center/cover no-repeat;
+  #valores .card-valores .card-body {
+    flex: 1 1 auto;
+    padding: 1.5rem;
   }
-  .valores-list .valor-item {
+  #valores .valores-list .valor-item {
     display: flex;
     align-items: flex-start;
-    gap: 0.75rem;
+    gap: .75rem;
     margin-bottom: 1rem;
   }
-  .valores-list i {
-    font-size: 1.25rem;
+  #valores .valores-list i {
     color: var(--gold);
-    margin-top: 0.25rem;
+    font-size: 1.25rem;
+    margin-top: .25rem;
   }
-  .valores-list p {
-    margin: 0;
+  #valores .valores-list p {
     color: var(--gray-text);
-    font-size: 1rem;
+    margin: 0;
     line-height: 1.5;
   }
+  #valores .valores-img {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+  }
 
-  /* Visão e Missão */
+  /* Layout de cards para Visão & Missão */
   #visao-missao {
     background: var(--white);
     padding: 4rem 0;
   }
+  #visao-missao .row-vm {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  #visao-missao .card-vm {
+    flex: 1 1 calc(50% - 1rem);
+    border: none;
+    border-radius: .75rem;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+    overflow: hidden;
+  }
+  #visao-missao .card-vm .card-body {
+    padding: 1.5rem;
+  }
   #visao-missao .text-block {
     color: var(--gray-text);
-    font-size: 1rem;
     line-height: 1.6;
-    text-align: left;
     margin: 0;
   }
 
-  /* Responsividade */
   @media (max-width: 767px) {
-    .row-valores {
+    #valores .row-valores,
+    #visao-missao .row-vm {
       flex-direction: column;
-    }
-    .valores-text,
-    .valores-image {
-      flex: 1 1 100%;
-      padding: 0;
-    }
-    .valores-image {
-      height: 250px;
-      margin-top: 2rem;
-    }
-    /* Em mobile, títulos ficam centralizados para melhor leitura */
-    .section-title {
-      justify-content: center !important;
-    }
-    .section-title + .section-divider {
-      margin: 0 auto 2rem;
-    }
-    .section-title .title-main {
-      text-align: center;
-    }
-    .text-block {
-      text-align: center;
     }
   }

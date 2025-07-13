@@ -56,3 +56,19 @@
   p{
     color: #808080
   }
+
+  .diferencial-card {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Estado hover */
+.diferencial-card:hover {
+  background-color: var(--gray);
+}
+
+/* Ícone, título e texto viram brancos no hover */
+.diferencial-card:hover .icon-diferencial,
+.diferencial-card:hover .diferencial-title,
+.diferencial-card:hover .diferencial-desc {
+  color: #fff !important;
+}
