@@ -1,0 +1,69 @@
+  :root {
+    --gray: #808080;
+    --gray-text: #6c757d;
+    --gold: #D4AF37;
+  }
+
+
+  #solucoes {
+    position: relative;
+    background: url('../images/solucoes.jpg') center/cover no-repeat;
+    padding: 6rem 0;
+    color: #fff;
+
+  }
+  #solucoes::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  #solucoes .container {
+    position: relative;
+    z-index: 1;
+  }
+
+  /* Cards de solução */
+  .solucao-card {
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 0.75rem;
+    padding: 2rem;
+    height: 100%;
+  }
+  .solucao-card h5 {
+    color: var(--gray);
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+  .solucao-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .solucao-card li {
+    color: var(--gray-text);
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 0.75rem;
+    display: flex;
+    align-items: flex-start;
+  }
+  .solucao-card li i {
+    color: var(--gold);
+    font-size: 1.25rem;
+    margin-right: 0.5rem;
+    line-height: 1;
+    margin-top: 0.2rem;
+  }
+
+  @media (max-width: 767px) {
+    #solucoes {
+      padding: 4rem 0;
+    }
+  }
+
+  @media (min-width: 992px) {
+  #solucoes {
+    height: 100%
+  }
+}
